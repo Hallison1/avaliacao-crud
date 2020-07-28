@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <td>Action</td>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Preço</td>   
+    </tr>
+
+    {{#data}} 
+    <tr>
+        <td>
+            <button onclick="location.href='update/{{id}}'" type="button">Atualizar</button>
+            <button onclick="location.href='deletar/{{id}}'" type="button">Apagar</button><br>
+        </td>
+        <td>{{id}}</td>
+        <td>{{name}}</td>   
+        <td>{{price}}</td>
+    </tr>
+    {{/data}}
+</table>
